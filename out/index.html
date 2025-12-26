@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+
+  
     <title>Academic & Professional Portfolio | Projects & Research Showcase</title>
     <meta name="description" content="Explore my comprehensive portfolio featuring innovative projects including mobile applications, production internship work, R&D research, and graduation thesis. Showcasing academic excellence and professional development in software engineering and design." />
     <meta name="keywords" content="portfolio, academic projects, mobile application, internship, research, graduation thesis, software development" />
@@ -28,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/deneme/assets/index-BgCvbq6M.js"></script>
+    <script type="module" crossorigin src="/deneme/assets/index-BWnQw62g.js"></script>
     <link rel="stylesheet" crossorigin href="/deneme/assets/index-CNRqBtSk.css">
   </head>
   <body>
